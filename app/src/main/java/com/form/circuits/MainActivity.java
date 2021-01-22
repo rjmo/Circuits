@@ -1,6 +1,7 @@
 package com.form.circuits;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.os.Bundle;
@@ -27,6 +28,9 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
 
     ListView circuits;
     SwipeRefreshLayout refreshLayout;
+    RecyclerView recyclerView;
+    String s1 [] = {"nomCircuit", "descriptionCourteCircuit", "descriptionLongueCircuit", "infoGeneraleCircuit", "datePremierJourCircuit", "prixRegulierCircuit", "detailVersement"};
+    Integer s2[] = {R.id.nomCircuit, R.id.descriptionCourteCircuit, R.id.descriptionLongueCircuit, R.id.infoGeneraleCircuit, R.id.datePremierJourCircuit, R.id.prixRegulierCircuit, R.id.detailVersement};
 
 
     @Override
@@ -34,6 +38,12 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         circuits = (ListView) findViewById(R.id.lstView);
+
+        recyclerView =findViewById(R.id.rec);
+
+
+        MyAdapter myAdapter = new MyAdapter(this, s1, s2);
+
         lister();
 
     }
