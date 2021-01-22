@@ -8,12 +8,16 @@
 
     <LinearLayout
         android:id="@+id/linearLayoutMap"
-        android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        android:elevation="5dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircleRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -22,53 +26,40 @@
             android:id="@+id/nomCircuit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="10dp"
             android:paddingTop="20dp"
             android:paddingBottom="20dp"
             android:text="text"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            tools:padding="10dp" />
 
         <TextView
             android:id="@+id/descriptionCourteCircuit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="10dp"
             android:textAlignment="textStart" />
 
         <TextView
             android:id="@+id/descriptionLongueCircuit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="10dp"
             android:textAlignment="textStart" />
 
         <TextView
             android:id="@+id/infoGeneraleCircuit"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:padding="10dp" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingBottom="10dp">
-
-            <TextView
-                android:id="@+id/datedepart"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Date du départ: "
-                android:textColor="@color/black" />
-
-            <TextView
-                android:id="@+id/datePremierJourCircuit"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:padding="10dp"
             android:paddingBottom="10dp">
 
             <TextView
@@ -92,10 +83,31 @@
                 android:text=" $" />
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/datedepart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date du départ: "
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/datePremierJourCircuit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
         <TextView
             android:id="@+id/textDetail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="10dp"
             android:text="Détails:"
             android:textColor="#000000" />
 
@@ -103,6 +115,7 @@
             android:id="@+id/detailVersement"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="10dp"
             android:paddingBottom="10dp" />
     </LinearLayout>
 
