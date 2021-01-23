@@ -6,6 +6,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
@@ -29,8 +30,6 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
     ListView circuits;
     SwipeRefreshLayout refreshLayout;
     RecyclerView recyclerView;
-    String s1 [] = {"nomCircuit", "descriptionCourteCircuit", "descriptionLongueCircuit", "infoGeneraleCircuit", "datePremierJourCircuit", "prixRegulierCircuit", "detailVersement"};
-    Integer s2[] = {R.id.nomCircuit, R.id.descriptionCourteCircuit, R.id.descriptionLongueCircuit, R.id.infoGeneraleCircuit, R.id.datePremierJourCircuit, R.id.prixRegulierCircuit, R.id.detailVersement};
 
 
     @Override
@@ -42,7 +41,6 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         recyclerView =findViewById(R.id.rec);
 
 
-        MyAdapter myAdapter = new MyAdapter(this, s1, s2);
 
         lister();
 
@@ -88,6 +86,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
                                     map.put("datePremierJourCircuit", unCircuit.getString("datePremierJourCircuit"));
                                     map.put("prixRegulierCircuit", unCircuit.getString("prixRegulierCircuit"));
                                     map.put("detailVersement", unCircuit.getString("detailVersement"));
+
                                     tabCircuits.add(map);
                                 }
 
