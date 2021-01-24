@@ -29,7 +29,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MainActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
+public class MainActivity extends AppCompatActivity {
 
     ListView circuits;
     SwipeRefreshLayout refreshLayout;
@@ -43,22 +43,12 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         setContentView(R.layout.activity_main);
 
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-
-            public void run() {
-                Intent i = new Intent(MainActivity.this, HomeActivity.class);
-                startActivity(i);
-                finish();
-
-            }
-        }, 4*1000);
-
-
-
 
 
         circuits = (ListView) findViewById(R.id.lstView);
+
+lister();
+
     }
 
 
@@ -137,12 +127,5 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         Volley.newRequestQueue(this).add(requete);//Si Volley rouge clique Volley et choisir add dependency on module volley
     }
 
-    @Override
-    public void onRefresh() {
-        lister();
-
-
-        refreshLayout.setRefreshing(false);
-    }
 
 }
