@@ -1,10 +1,14 @@
 package com.form.circuits;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
@@ -30,23 +34,36 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
     ListView circuits;
     SwipeRefreshLayout refreshLayout;
     RecyclerView recyclerView;
+    private android.content.Intent Intent;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+
+            public void run() {
+                Intent i = new Intent(MainActivity.this, HomeActivity.class);
+                startActivity(i);
+                finish();
+
+            }
+        }, 4*1000);
+
+
+
+
+
         circuits = (ListView) findViewById(R.id.lstView);
-
-        recyclerView =findViewById(R.id.rec);
-
-
-
-        lister();
-
     }
 
-    public void lister(){
+
+
+        public void lister(){
         final ArrayList<HashMap<String, Object>> tabCircuits = new ArrayList<HashMap<String, Object>>();
         String url = "http://10.0.2.2:80/testeAPI/PHP/circuitsControllerJSON.php";
 
