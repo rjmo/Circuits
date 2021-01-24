@@ -166,10 +166,20 @@
                     android:textColor="@color/black"
                     android:textSize="36sp" />
 
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:paddingLeft="24dp"
+                    android:text="Lorem Ipsum"
+                    android:textColor="#3A3333"
+                    android:textSize="24sp" />
+
                 <ImageView
                     android:id="@+id/imageView6"
-                    android:layout_width="match_parent"
-                    android:layout_height="328dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="287dp"
                     android:src="@drawable/py" />
 
                 <TextView
