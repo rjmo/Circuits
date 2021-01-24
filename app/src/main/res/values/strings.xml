@@ -20,4 +20,6 @@
     <string name="invalid_username">Nom utilisateur non valide</string>
     <string name="invalid_password">Mot de passe doit être > 6 caractères</string>
     <string name="login_failed">"Connexion non réussi"</string>
+    <string name="apropos">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel ligula facilisis, aliquet ligula in, aliquet turpis. Nullam at lectus lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In hac habitasse platea dictumst. Sed non sapien faucibus, vehicula nisi sit amet, accumsan tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec cursus lacus nunc, finibus dignissim dui gravida quis. Etiam quis lacinia elit."</string>
+
 </resources>
