@@ -13,7 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Circuits"
         android:usesCleartextTraffic="true">
-        <activity android:name=".AccueilActivity"></activity>
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/title_activity_login"></activity>
+        <activity android:name=".AccueilActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".HomeActivity">
             <intent-filter>
