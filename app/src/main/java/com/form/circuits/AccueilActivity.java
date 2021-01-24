@@ -14,6 +14,8 @@ import android.widget.Button;
 
 import androidx.appcompat.widget.Toolbar;
 
+import com.form.circuits.ui.login.LoginActivity;
+
 public class AccueilActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +27,6 @@ public class AccueilActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
-        Intent i = new Intent(AccueilActivity.this, MainActivity.class);
 
         final Button button = findViewById(R.id.buttonAccu);
         button.setOnClickListener(new View.OnClickListener() {
@@ -35,5 +36,14 @@ public class AccueilActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+
+
+    }
+
+    public void loginCircuit(View view) {
+        Intent i = new Intent(AccueilActivity.this, LoginActivity.class);
+        startActivity(i);
+
     }
 }

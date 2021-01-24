@@ -2,6 +2,7 @@ package com.form.circuits;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
@@ -20,6 +21,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.form.circuits.ui.login.LoginActivity;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -42,16 +44,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbarr);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
 
 
         circuits = (ListView) findViewById(R.id.lstView);
 
-lister();
+        lister();
 
     }
 
+    public void loginCircuit(View view) {
+        Intent i = new Intent(MainActivity.this, LoginActivity.class);
+        startActivity(i);
 
+    }
 
         public void lister(){
         final ArrayList<HashMap<String, Object>> tabCircuits = new ArrayList<HashMap<String, Object>>();
