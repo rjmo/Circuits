@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".AccueilActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="408dp"
+        android:layout_height="268dp"
+        android:contentDescription="TODO"
+
+        android:src="@drawable/marrocos_camelos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="296dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="344dp"
+        android:fontFamily="@font/roboto"
+        android:text="Chaque Circuit a son propre histoire."
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="150dp"
+        android:fontFamily="@font/roboto"
+        android:paddingTop="10dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero sem, tristique eu fringilla at, elementum ut lectus. Duis fermentum justo non gravida egestas. In vestibulum a erat ac congue. Duis molestie interdum neque, in bibendum tellus consequat eget. Phasellus vehicula, urna et laoreet mollis."
+        android:textColor="#3A3333"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonAccu"
+        android:layout_width="180dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="207dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Découvrir"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

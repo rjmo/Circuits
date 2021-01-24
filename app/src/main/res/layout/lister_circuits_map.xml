@@ -27,40 +27,48 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto"
-            android:padding="10dp"
+            android:paddingLeft="24dp"
             android:paddingTop="20dp"
             android:paddingBottom="20dp"
             android:text="text"
-            android:textAlignment="center"
+            android:textAlignment="textStart"
             android:textColor="@color/black"
-            android:textSize="30dp"
-            tools:padding="10dp" />
+            android:textSize="36sp" />
 
         <TextView
             android:id="@+id/descriptionCourteCircuit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:textAlignment="textStart" />
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:text="sdfgsdfgsdfgsdfgsdfg"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/descriptionLongueCircuit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:textAlignment="textStart" />
+            android:padding="24dp"
+            android:text="sdfgsdfgsdfg"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/infoGeneraleCircuit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp" />
+            android:paddingLeft="24dp"
+            android:paddingBottom="10dp"
+            android:text="wertwert" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="10dp"
+            android:paddingLeft="24dp"
             android:paddingBottom="10dp">
 
             <TextView
@@ -88,7 +96,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="10dp"
+            android:paddingLeft="24dp"
             android:paddingBottom="10dp">
 
             <TextView
@@ -108,7 +116,7 @@
             android:id="@+id/textDetail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
+            android:paddingLeft="24dp"
             android:text="Détails:"
             android:textColor="#000000" />
 
@@ -116,14 +124,15 @@
             android:id="@+id/detailVersement"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:paddingBottom="10dp" />
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="horizontal"
+            android:paddingTop="10dp"
             android:paddingBottom="15dp">
 
 

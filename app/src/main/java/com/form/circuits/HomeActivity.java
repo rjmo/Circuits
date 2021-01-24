@@ -19,11 +19,11 @@ public class HomeActivity extends AppCompatActivity {
             @Override
 
             public void run() {
-                Intent i = new Intent(HomeActivity.this, MainActivity.class);
+                Intent i = new Intent(HomeActivity.this, AccueilActivity.class);
                 startActivity(i);
                 finish();
 
             }
-        }, 3*1000);
+        }, 2*1000);
     }
 }
