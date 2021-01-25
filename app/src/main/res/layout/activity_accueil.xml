@@ -123,10 +123,16 @@
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="34dp"
                 android:layout_marginEnd="0dp"
-                android:layout_marginBottom="14dp"
+                android:layout_marginBottom="24dp"
                 android:backgroundTint="@color/teal_700"
                 android:text="Découvrir"
                 android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -138,6 +144,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="354dp"
                     android:layout_marginLeft="24dp"
+                    android:layout_marginTop="24dp"
                     android:layout_marginRight="24dp"
                     android:src="@drawable/original" />
 
@@ -160,8 +167,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="68dp"
                     android:layout_marginLeft="24dp"
+                    android:layout_marginBottom="24dp"
                     android:backgroundTint="@color/teal_700"
                     android:text="En savoir plus" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
 
                 <TextView
                     android:id="@+id/textView8"
