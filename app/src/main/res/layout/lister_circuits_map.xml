@@ -57,7 +57,7 @@
             android:padding="24dp"
             android:text="sdfgsdfgsdfg"
             android:textAlignment="textStart"
-            android:textSize="14sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/infoGeneraleCircuit"
