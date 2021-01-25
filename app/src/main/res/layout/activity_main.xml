@@ -32,28 +32,26 @@
 
             <ImageView
                 android:id="@+id/imageView4"
-                android:layout_width="332dp"
-                android:layout_height="56dp"
+                android:layout_width="299dp"
+                android:layout_height="45dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/toolbarr"
-                app:layout_constraintHorizontal_bias="0.493"
                 app:layout_constraintStart_toStartOf="@+id/toolbarr"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintVertical_bias="0.545"
                 app:srcCompat="@drawable/logo4bar" />
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:layout_marginStart="320dp"
+                android:onClick="loginCircuit"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/toolbarr"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/imageView4"
+                app:layout_constraintHorizontal_bias="0.957"
+                app:layout_constraintStart_toStartOf="@+id/toolbarr"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.523"
-                android:onClick="loginCircuit"
                 app:srcCompat="@drawable/ic_baseline_account_circle_24" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
