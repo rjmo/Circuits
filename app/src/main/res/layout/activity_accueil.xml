@@ -31,24 +31,26 @@
 
             <ImageView
                 android:id="@+id/imageView4"
-                android:layout_width="299dp"
-                android:layout_height="45dp"
+                android:layout_width="332dp"
+                android:layout_height="56dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/toolbarr"
+                app:layout_constraintHorizontal_bias="0.493"
                 app:layout_constraintStart_toStartOf="@+id/toolbarr"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.545"
+                app:layout_constraintVertical_bias="0.0"
                 app:srcCompat="@drawable/logo4bar" />
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
+                android:layout_marginStart="320dp"
                 android:onClick="loginCircuit"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/toolbarr"
-                app:layout_constraintHorizontal_bias="0.957"
-                app:layout_constraintStart_toStartOf="@+id/toolbarr"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imageView4"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.523"
                 app:srcCompat="@drawable/ic_baseline_account_circle_24" />
@@ -62,8 +64,11 @@
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-26dp">
+        android:layout_marginTop="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -73,9 +78,11 @@
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
-                android:layout_height="296dp"
-                android:layout_marginTop="0dp"
+                android:layout_height="232dp"
+                android:layout_marginLeft="24dp"
 
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="24dp"
                 android:contentDescription="TODO"
                 android:src="@drawable/marrocos_camelos"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -105,6 +112,7 @@
                 android:layout_marginEnd="24dp"
                 android:layout_marginBottom="0dp"
                 android:fontFamily="@font/roboto"
+                android:justificationMode="inter_word"
                 android:paddingTop="10dp"
                 android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero sem, tristique eu fringilla at, elementum ut lectus. Duis fermentum justo non gravida egestas. In vestibulum a erat ac congue. Duis molestie interdum neque, in bibendum tellus consequat eget. Phasellus vehicula, urna et laoreet mollis."
                 android:textColor="#3A3333"
@@ -117,7 +125,7 @@
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="34dp"
                 android:layout_marginEnd="0dp"
-                android:layout_marginBottom="24dp"
+                android:layout_marginBottom="14dp"
                 android:backgroundTint="@color/teal_700"
                 android:text="Découvrir"
                 android:textStyle="bold" />
@@ -127,11 +135,35 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <View
-                    android:id="@+id/divider"
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="354dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:src="@drawable/original" />
+
+                <TextView
+                    android:id="@+id/textView7"
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="?android:attr/listDivider" />
+                    android:layout_height="wrap_content"
+                    android:justificationMode="inter_word"
+                    android:paddingLeft="24dp"
+                    android:paddingTop="14dp"
+                    android:paddingRight="24dp"
+                    android:paddingBottom="24dp"
+                    android:text="@string/apropos"
+                    android:textColor="#3A3333"
+                    android:textSize="18sp"
+                    tools:textAlignment="textStart" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="68dp"
+                    android:layout_marginLeft="24dp"
+                    android:backgroundTint="@color/teal_700"
+                    android:text="En savoir plus" />
 
                 <TextView
                     android:id="@+id/textView8"
@@ -154,27 +186,21 @@
                     android:textColor="#3A3333"
                     android:textSize="24sp" />
 
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="24dp"
-                    android:paddingRight="24dp"
-                    android:paddingBottom="10dp"
-                    android:text="@string/apropos"
-                    android:textColor="#3A3333"
-                    android:textSize="18sp" />
-
                 <ImageView
                     android:id="@+id/imageView6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="287dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="232dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="10dp"
                     android:src="@drawable/py" />
 
                 <TextView
                     android:id="@+id/textView9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:justificationMode="inter_word"
                     android:paddingLeft="24dp"
                     android:paddingRight="24dp"
                     android:paddingBottom="24dp"
@@ -184,33 +210,6 @@
 
                 <Button
                     android:id="@+id/button2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="68dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginBottom="24dp"
-                    android:backgroundTint="@color/teal_700"
-                    android:text="En savoir plus" />
-
-                <ImageView
-                    android:id="@+id/imageView5"
-                    android:layout_width="match_parent"
-                    android:layout_height="440dp"
-                    android:src="@drawable/original" />
-
-                <TextView
-                    android:id="@+id/textView7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="24dp"
-                    android:paddingTop="10dp"
-                    android:paddingRight="24dp"
-                    android:paddingBottom="24dp"
-                    android:text="@string/apropos"
-                    android:textColor="#3A3333"
-                    android:textSize="18sp" />
-
-                <Button
-                    android:id="@+id/button"
                     android:layout_width="wrap_content"
                     android:layout_height="68dp"
                     android:layout_marginLeft="24dp"
