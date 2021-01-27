@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
         public void lister(){
         final ArrayList<HashMap<String, Object>> tabCircuits = new ArrayList<HashMap<String, Object>>();
-        String url = "http://10.0.2.2:80/testeAPI/PHP/circuitsControllerJSON.php";
+        String url = "http://10.0.2.2:80/API/PHP/circuitsControllerJSON.php";
 
         StringRequest requete = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>() {
