@@ -7,11 +7,17 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Base64;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
@@ -94,7 +100,13 @@ public class MainActivity extends AppCompatActivity {
                                     if (i==3)
                                         map.put("img", d);
                                     else*/
-//                                    map.put("img", String.valueOf(getResources().getIdentifier(nomImage, "drawable", getPackageName())));
+
+
+                                    String base64Image = unCircuit.getString("fichierPhoto");
+                                    byte[] decodedString = Base64.decode(base64Image, Base64.DEFAULT);
+                                    Bitmap decodedByte = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
+
+                                    map.put("fichierPhoto", decodedByte);
                                     map.put("nomCircuit", unCircuit.getString("nomCircuit"));
                                     map.put("descriptionCourteCircuit", unCircuit.getString("descriptionCourteCircuit"));
                                     map.put("descriptionLongueCircuit", unCircuit.getString("descriptionLongueCircuit"));
@@ -106,10 +118,31 @@ public class MainActivity extends AppCompatActivity {
                                     tabCircuits.add(map);
                                 }
 
+
+
                                 SimpleAdapter monAdapter = new SimpleAdapter (MainActivity.this, tabCircuits, R.layout.lister_circuits_map,
-                                        new String[] {"nomCircuit", "descriptionCourteCircuit", "descriptionLongueCircuit", "infoGeneraleCircuit", "datePremierJourCircuit", "prixRegulierCircuit", "detailVersement"},
-                                        new int[] {R.id.nomCircuit, R.id.descriptionCourteCircuit, R.id.descriptionLongueCircuit, R.id.infoGeneraleCircuit, R.id.datePremierJourCircuit, R.id.prixRegulierCircuit, R.id.detailVersement});
-                                circuits.setAdapter(monAdapter);
+                                        new String[] {"nomCircuit", "descriptionCourteCircuit", "descriptionLongueCircuit", "infoGeneraleCircuit", "datePremierJourCircuit", "prixRegulierCircuit", "detailVersement", "fichierPhoto"},
+                                        new int[] {R.id.nomCircuit, R.id.descriptionCourteCircuit, R.id.descriptionLongueCircuit, R.id.infoGeneraleCircuit, R.id.datePremierJourCircuit, R.id.prixRegulierCircuit, R.id.detailVersement, R.id.imageCircuit});
+//                                circuits.setAdapter(monAdapter);
+//                                https://gist.github.com/oceantear/8331769
+                                monAdapter.setViewBinder(new SimpleAdapter.ViewBinder() {
+                                    @Override
+                                    public boolean setViewValue(View view, Object data, String textRepresentation) {
+
+                                        if( (view instanceof ImageView) & (data instanceof Bitmap) ) {
+                                            ImageView iv = (ImageView) view;
+                                            Bitmap bm = (Bitmap) data;
+                                            iv.setImageBitmap(bm);
+                                            return true;
+                                        }
+                                        return false;
+                                    }
+                                });
+
+                                ListView listView = new ListView(MainActivity.this);
+                                listView.setAdapter(monAdapter);
+                                setContentView(listView);
+
                             }
                             else{}
                         } catch (JSONException e) {
