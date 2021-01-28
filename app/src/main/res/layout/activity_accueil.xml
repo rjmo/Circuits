@@ -112,7 +112,7 @@
                 android:fontFamily="@font/roboto"
                 android:justificationMode="inter_word"
                 android:paddingTop="10dp"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero sem, tristique eu fringilla at, elementum ut lectus. Duis fermentum justo non gravida egestas. In vestibulum a erat ac congue. Duis molestie interdum neque, in bibendum tellus consequat eget. Phasellus vehicula, urna et laoreet mollis."
+                android:text="Parcourez nos produits explore et voyez par vous-même notre offre incomparable. Vous constaterez qu’elle se traduit par des formules adaptées à votre personnalité de voyageur."
                 android:textColor="#3A3333"
                 android:textSize="18sp" />
 
@@ -152,12 +152,11 @@
                     android:id="@+id/textView7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:justificationMode="inter_word"
                     android:paddingLeft="24dp"
                     android:paddingTop="14dp"
                     android:paddingRight="24dp"
                     android:paddingBottom="24dp"
-                    android:text="@string/apropos"
+                    android:text="Notre plus grande ambition ? Vous accompagner au cœur des traditions afin que vous puissiez vivre les plus belles expériences de voyage de votre vie ! Partez la tête tranquille vers de nouveaux horizons et laissez-vous bercer par les nombreux attraits de la destination de votre choix."
                     android:textColor="#3A3333"
                     android:textSize="18sp"
                     tools:textAlignment="textStart" />
@@ -194,7 +193,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto"
                     android:paddingLeft="24dp"
-                    android:text="Lorem Ipsum"
+                    android:text="Voyage organisé en Égypte"
                     android:textColor="#3A3333"
                     android:textSize="24sp" />
 
@@ -216,7 +215,7 @@
                     android:paddingLeft="24dp"
                     android:paddingRight="24dp"
                     android:paddingBottom="24dp"
-                    android:text="@string/apropos"
+                    android:text="Un voyage complet qui vous fera remonter le temps de l’ancien empire en passant par le Caire et ses légendaires pyramides jusqu’au site de l’ancien phare d’Alexandrie considéré comme l’une des 7 merveilles du monde de l’Antiquité. Vous frissonnerez face à la richesse architecturale du temple d’Abou Simbel, serez émerveillés par les eaux cristallines de la mer Rouge et subjugués par la beauté du tombeau de Néfertari."
                     android:textColor="#3A3333"
                     android:textSize="18sp" />
 
